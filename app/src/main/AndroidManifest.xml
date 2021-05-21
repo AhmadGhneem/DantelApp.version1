@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <manifest package="com.example.lastversion"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <application tools:ignore="GoogleAppIndexingWarning"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="Dental App"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true">
+
+        <activity android:name=".dashboard">
+
+            <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+</activity>
+        <activity android:name=".About"/>
+        <activity android:name=".profile"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".editprofil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-20dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/editprofil" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EditProfile"
+                    android:textColor="@color/hide_white"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:id="@+id/select"
+                    android:layout_width="169dp"
+                    android:layout_height="169dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/gallery" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/nameEtid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_h"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="@dimen/mini_margin"
+            android:background="@drawable/edit_background"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="@dimen/fab_margin"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/mobileEtid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_h"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginVertical="@dimen/mini_margin"
+            android:background="@drawable/edit_background"
+            android:digits="1234567890"
+            android:hint="E_Mobile"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingHorizontal="@dimen/fab_margin"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/birthDate"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/edit_h"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="@dimen/mini_margin"
+            android:background="@drawable/edit_background"
+            android:hint="Birth date"
+            android:editable="false"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:paddingHorizontal="@dimen/fab_margin"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:text="Gender"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="@dimen/fab_margin"
+            android:checkedButton="@id/radio_one">
+
+            <RadioButton
+                android:id="@+id/radio_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radio_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Female" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/EditBTN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="@dimen/fab_margin"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/btn_background"
+            android:text="Edit"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_btn" />
+
+    </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
